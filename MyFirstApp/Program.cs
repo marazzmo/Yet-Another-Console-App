@@ -6,12 +6,10 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.Write(" Type your name: ");
+            Console.Write("Hello World!\nType something: ");
             string s = Console.ReadLine();
-            Console.WriteLine("Hello " + s);
-            Console.Read();
-            Console.Clear();
+            Console.WriteLine("Oho, you can type something like " + s + "! Impressive!");
+            Console.ReadKey();
         }
     }
 }
