@@ -1,23 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyFirstApp
 {
-    public class Point
-    {
-        public string Name { get; }
-        public int X { get; }
-        public int Y { get; }
-        public Point(string name, int x, int y)
-        {
-            this.Name = name;
-            this.X = x;
-            this.Y = y;
-        }
-    }
     public class Polygon
     {
         List<Point> _points = new List<Point>();
@@ -49,7 +34,7 @@ namespace MyFirstApp
             var points = _points;
             double result = 0;
             int pointsCount = points.Count - 1;
-            for(int i = 0; i <= pointsCount - 1; i++)
+            for (int i = 0; i <= pointsCount - 1; i++)
             {
                 double d = Math.Sqrt((points[i + 1].X - points[i].X) * (points[i + 1].X - points[i].X) + (points[i + 1].Y - points[i].Y) * (points[i + 1].Y - points[i].Y));
                 result = result + d;
